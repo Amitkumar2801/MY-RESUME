@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Kumar - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.4;
+            font-size: 11.5px;
+        }
+
+        /* A4 Page Styling */
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 10px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        @media print {
+            body { background: none; }
+            .page { 
+                margin: 0; 
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            /* Removes browser headers and footers */
+            header, footer { display: none !important; }
+        }
+
+        /* Typography & Layout */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #1e40af;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 10px;
+            color: #555;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1e40af;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 8px;
+            padding-bottom: 2px;
+        }
+
+        .summary-text {
+            text-align: justify;
+            font-style: italic;
+            color: #444;
+        }
+
+        .item {
+            margin-bottom: 8px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .item-sub {
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 18px;
+        }
+
+        li {
+            margin-bottom: 2px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px 20px;
+        }
+
+        .skill-cat {
+            font-weight: 600;
+            color: #111;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .bold { font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="header">
+            <h1>Amit Kumar</h1>
+            <p style="margin-bottom: 5px;">Wasilpur, Arwal, Bihar 804401</p>
+            <div class="contact-info">
+                <span>📞 +91 8873142022</span>
+                <span>|</span>
+                <span>✉️ AmitKumar.arwal28@gmail.com</span>
+                <span>|</span>
+                <span>🔗 <a href="https://github.com/Amitkumar2801">github.com/Amitkumar2801</a></span>
+                <span>|</span>
+                <span>🔗 <a href="https://www.linkedin.com/in/amit-kumar-835a73345/">linkedin.com/in/amit-kumar-835a73345/</a></span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary-text">
+                Ambitious 4th-semester Diploma student in Artificial Intelligence and Machine Learning (AI/ML) at Government Polytechnic, Patna. Proven experience in building data-driven applications through internships at Infosys Springboard and NIELIT. Expert in C, Python, and FastAPI with a focus on creating efficient web-based tools and machine learning models.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Diploma in AI/ML</span>
+                    <span>2023 - Present</span>
+                </div>
+                <div class="item-sub">Government Polytechnic, Patna (4th Semester)</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>12th (Intermediate) - Bihar Board</span>
+                    <span>354/500 (70.8%)</span>
+                </div>
+                <div class="item-sub">SDS College, Kaler, Arwal</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>10th (Matriculation) - Bihar Board</span>
+                    <span>357/500 (71.4%)</span>
+                </div>
+                <div class="item-sub">G.A. High School, Arwal</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Internships & Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Internship – Infosys Springboard</span>
+                    <span>Sept 2025 – Nov 2025</span>
+                </div>
+                <div class="item-sub">Project: Skill Resume Matcher and Skill Recommender</div>
+                <ul>
+                    <li>Developed backend using <span class="bold">FastAPI</span> and managed complex file-handling operations.</li>
+                    <li>Built a tool to analyze resume ATS scores and recommend skills based on job descriptions.</li>
+                    <li>Integrated skill mapping logic to provide direct learning resource links to users.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Industrial Training – NIELIT Patna</span>
+                    <span>1 Month</span>
+                </div>
+                <div class="item-sub">Field: Machine Learning using Python</div>
+                <ul>
+                    <li>Gained hands-on experience in data preprocessing, visualization, and building predictive models.</li>
+                    <li>Learned to implement supervised learning algorithms for real-world datasets.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Startup Project</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Founder & Lead Developer – SkillMatch AI</span>
+                    <span>Self-Initiated</span>
+                </div>
+                <div class="item-sub">Tech: Python, FastAPI, JavaScript, File Handling</div>
+                <ul>
+                    <li>Building a bridge between student resumes and modern industry job requirements.</li>
+                    <li>Developed automated logic to parse PDF resumes and calculate compatibility scores.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div><span class="skill-cat">Languages:</span> C, Python, HTML, CSS, JavaScript</div>
+                <div><span class="skill-cat">Frameworks:</span> FastAPI, DBMS, File Handling & Parsing</div>
+                <div><span class="skill-cat">Tools:</span> Git, GitHub, VS Code, Power BI</div>
+                <div><span class="skill-cat">Databases:</span> MySQL, SQLite, MongoDB</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Certifications & Activities</h2>
+            <ul>
+                <li><span class="bold">Certifications:</span> MongoDB Professional, Power BI, NIELIT Machine Learning.</li>
+                <li><span class="bold">Daily Coding:</span> Active contributor on GitHub with daily commits and updates.</li>
+                <li><span class="bold">Training:</span> Completed 40-day intensive technical session at Infosys Springboard.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Languages</h2>
+            <p>Hindi (Native), English (Professional/Technical)</p>
+        </div>
+    </div>
+
+</body>
+</html>
