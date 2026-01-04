@@ -3,102 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amit Kumar - Resume 2026</title>
+    <title>Amit_Kumar_Resume_2026</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #fff;
-            color: #1a1a1a;
+            background-color: #ffffff;
+            color: #000000;
             line-height: 1.4;
-            font-size: 10.5px;
+            font-size: 11px;
+            /* Text ko thoda bold karne ke liye weight 500 use kiya hai */
+            font-weight: 500; 
+            -webkit-font-smoothing: antialiased;
         }
+
         .page {
             width: 210mm;
             min-height: 297mm;
             padding: 12mm 15mm;
             margin: 0 auto;
+            background: #ffffff;
         }
+
         .header {
             text-align: center;
-            border-bottom: 2px solid #000;
+            border-bottom: 2.5px solid #000;
             padding-bottom: 8px;
             margin-bottom: 12px;
         }
+
         h1 {
-            font-size: 24px;
-            color: #000;
+            font-size: 26px;
             text-transform: uppercase;
-            margin-bottom: 4px;
-            letter-spacing: 1px;
+            margin-bottom: 5px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
+
         .contact-info {
-            font-size: 10px;
+            font-size: 11px;
             display: flex;
             justify-content: center;
-            gap: 8px;
+            gap: 12px;
             flex-wrap: wrap;
-            margin-bottom: 3px;
+            font-weight: 600;
         }
-        .contact-info span {
-            white-space: nowrap;
-        }
+
         .contact-info a {
             color: #000;
             text-decoration: none;
-            font-weight: 600;
         }
-        .separator {
-            margin: 0 4px;
-            font-weight: 400;
-        }
+
         .section {
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
+
         .section-title {
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;
-            border-bottom: 1px solid #000;
-            margin-bottom: 6px;
-            padding-bottom: 2px;
-            letter-spacing: 0.5px;
-        }
-        .item {
+            border-bottom: 1.5px solid #000;
             margin-bottom: 8px;
+            padding-bottom: 2px;
         }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
         .item-header {
             display: flex;
             justify-content: space-between;
             font-weight: 700;
-            font-size: 11px;
+            font-size: 12px;
         }
+
         .item-sub {
             display: flex;
             justify-content: space-between;
             font-style: italic;
             font-weight: 600;
-            margin-bottom: 2px;
-            color: #333;
+            margin-bottom: 3px;
+            color: #111;
         }
+
         p {
             text-align: justify;
         }
+
         ul {
-            margin-left: 16px;
+            margin-left: 20px;
             list-style-type: disc;
         }
+
         li {
-            margin-bottom: 2px;
+            margin-bottom: 3px;
             text-align: justify;
         }
+
         .skills-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4px 22px;
+            gap: 6px 35px;
         }
-        .bold { font-weight: 700; }
+
+        .bold-label {
+            font-weight: 700;
+        }
+
+        /* Printer settings to hide URLs, dates, and page titles */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body { margin: 0; }
+            .page {
+                margin: 0;
+                padding: 12mm 15mm;
+                width: 100%;
+                box-shadow: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -106,26 +140,22 @@
         <div class="header">
             <h1>Amit Kumar</h1>
             <div class="contact-info">
-                <span>Location: Arwal, Bihar, 804401</span>
-                <span class="separator">·</span>
-                <span><a href="tel:+918873142022">Phone: +91 8873142022</a></span>
-                <span class="separator">·</span>
-                <span>Email: <a href="mailto:AmitKumar.arwal28@gmail.com">AmitKumar.arwal28@gmail.com</a></span>
+                <span>Location: Arwal, Bihar, 804401</span> |
+                <span>Phone: +91 8873142022</span> |
+                <span>Email: amitkumar.arwal28@gmail.com</span>
             </div>
-            <div class="contact-info">
-                <span>GitHub: <a href="https://github.com/Amitkumar2801">github.com/Amitkumar2801</a></span>
-                <span class="separator">·</span>
-                <span>LinkedIn: <a href="https://linkedin.com/in/amit-kumar-835a73345/">linkedin.com/in/amit-kumar-835a73345/</a></span>
+            <div class="contact-info" style="margin-top: 3px;">
+                <span>GitHub: github.com/Amitkumar2801</span> |
+                <span>LinkedIn: linkedin.com/in/amit-kumar-835a73345/</span>
             </div>
         </div>
 
         <div class="section">
             <h2 class="section-title">Professional Summary</h2>
             <p>
-                Ambitious 4th-semester AI/ML Diploma student at Government Polytechnic, Patna, and founder of
-                <b>Skilynx</b>, an AI-powered recruitment ecosystem for unorganized and IT workers.
-                Specialized in building scalable applications using <b>Python 3.12, Gemini AI, and FastAPI</b>,
-                dedicated to bridging the gap between unskilled labor and industry requirements through
+                Ambitious 4th-semester AI/ML Diploma student at Government Polytechnic Barh, Patna, and founder of 
+                <b>Skilynx</b>. Specialized in building scalable applications using <b>Python 3.12, Gemini AI, and FastAPI</b>. 
+                Dedicated to bridging the gap between unskilled labor and industry requirements through 
                 AI-driven platforms and automation.
             </p>
         </div>
@@ -137,13 +167,11 @@
                     <span>Founder & Lead Developer – Skilynx (AI Recruitment Ecosystem)</span>
                     <span>2025 – Present</span>
                 </div>
-                <div class="item-sub">
-                    <span>Tech: Python, Gemini AI, MongoDB, Flask, OpenCV</span>
-                </div>
+                <div class="item-sub">Tech: Python, Gemini AI, MongoDB, Flask, OpenCV</div>
                 <ul>
                     <li>Building a unified platform to connect unorganized laborers and IT professionals to optimal job roles.</li>
-                    <li>Developed <b>Voice-to-Profile</b> flow using Gemini AI to help non-literate workers create digital profiles through speech input.</li>
-                    <li>Designed an <b>OpenCV-based</b> passwordless QR authentication system to enable secure, low-friction login for low-tech users.</li>
+                    <li>Developed <b>Voice-to-Profile</b> logic using Gemini AI to assist non-literate workers in creating digital profiles through speech.</li>
+                    <li>Designed an <b>OpenCV-based</b> passwordless QR authentication system for high accessibility and security.</li>
                 </ul>
             </div>
         </div>
@@ -155,12 +183,10 @@
                     <span>Intern – Infosys Springboard</span>
                     <span>Sep 2025 – Nov 2025</span>
                 </div>
-                <div class="item-sub">
-                    <span>Project: Skill Resume Matcher and Recommender</span>
-                </div>
+                <div class="item-sub">Project: Skill Resume Matcher and Recommender</div>
                 <ul>
                     <li>Engineered backend logic with <b>FastAPI</b> for automated resume parsing and industry compatibility scoring.</li>
-                    <li>Implemented skill gap analysis to recommend personalized learning resources to users based on job descriptions.</li>
+                    <li>Implemented skill gap analysis to recommend personalized learning resources to users.</li>
                 </ul>
             </div>
             <div class="item">
@@ -168,9 +194,7 @@
                     <span>Industrial Training – NIELIT Patna</span>
                     <span>July 2025</span>
                 </div>
-                <div class="item-sub">
-                    <span>Field: Machine Learning using Python</span>
-                </div>
+                <div class="item-sub">Field: Machine Learning using Python</div>
             </div>
         </div>
 
@@ -181,46 +205,40 @@
                     <span>Diploma in AI/ML (4th Semester)</span>
                     <span>2023 – 2026</span>
                 </div>
-                <div class="item-sub">
-                    <span>Government Polytechnic, Patna (SBTE)</span>
-                </div>
+                <div class="item-sub">Government Polytechnic Barh, Patna (SBTE)</div>
             </div>
             <div class="item">
                 <div class="item-header">
-                    <span>12th (Intermediate) – Bihar Board</span>
-                    <span>70.8% | 2024</span>
+                    <span>12th (Intermediate) – Bihar Board | 70.8%</span>
+                    <span>2024</span>
                 </div>
-                <div class="item-sub">
-                    <span>SDS College, Kaler, Arwal</span>
-                </div>
+                <div class="item-sub">SDS College, Kaler, Arwal</div>
             </div>
             <div class="item">
                 <div class="item-header">
-                    <span>10th (Matriculation) – Bihar Board</span>
-                    <span>71.4% | 2022</span>
+                    <span>10th (Matriculation) – Bihar Board | 71.4%</span>
+                    <span>2022</span>
                 </div>
-                <div class="item-sub">
-                    <span>G.A. High School, Arwal</span>
-                </div>
+                <div class="item-sub">G.A. High School, Arwal</div>
             </div>
         </div>
 
         <div class="section">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-container">
-                <div><span class="bold">Languages:</span> Python 3.12, C, JavaScript, HTML5/CSS3</div>
-                <div><span class="bold">AI/ML:</span> Gemini AI, OpenCV, Scikit-Learn, Predictive Modeling</div>
-                <div><span class="bold">Frameworks:</span> FastAPI, Flask, DBMS Concepts</div>
-                <div><span class="bold">Databases:</span> MongoDB, MySQL, SQLite</div>
-                <div><span class="bold">Tools:</span> Git, GitHub, Power BI, VS Code</div>
+                <div><span class="bold-label">Languages:</span> Python 3.12, C, JavaScript, HTML5/CSS3</div>
+                <div><span class="bold-label">AI/ML:</span> Gemini AI, OpenCV, Scikit-Learn, Predictive Modeling</div>
+                <div><span class="bold-label">Frameworks:</span> FastAPI, Flask, DBMS Concepts</div>
+                <div><span class="bold-label">Databases:</span> MongoDB, MySQL, SQLite</div>
+                <div><span class="bold-label">Tools:</span> Git, GitHub, Power BI, VS Code</div>
             </div>
         </div>
 
         <div class="section">
             <h2 class="section-title">Certifications & Languages</h2>
             <ul>
-                <li><span class="bold">Certifications:</span> MongoDB Professional, Power BI, NIELIT Machine Learning.</li>
-                <li><span class="bold">Languages:</span> Hindi (Native), English (Technical & Professional Proficiency).</li>
+                <li><span class="bold-label">Certifications:</span> MongoDB Professional, Power BI, NIELIT Machine Learning.</li>
+                <li><span class="bold-label">Languages:</span> Hindi (Native), English (Technical & Professional Proficiency).</li>
             </ul>
         </div>
     </div>
